@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lois en Vigueur - NextGen Bot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0e0e0e;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background: linear-gradient(90deg, #1a1a1a, #333333);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: #ff00ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?futuristic') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff00ff;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+        .law-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .law-card {
+            background: rgba(255, 0, 255, 0.1);
+            border: 1px solid #ff00ff;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .law-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff00ff;
+        }
+        .law-content {
+            display: none;
+            text-align: left;
+        }
+        .law-card.active .law-content {
+            display: block;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll('.law-card');
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    card.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Lois en Vigueur - NextGen Bot 🚀</h1>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">À propos</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h2>Lois applicables à l'utilisation du bot</h2>
+    </div>
+    <div class="section">
+        <h1>Lois en Vigueur - NextGen Bot 🚀</h1>
+        <div class="law-grid">
+            <!-- Exemple de loi -->
+            <div class="law-card">
+                <h2>1. Loi sur la protection des données 🔒</h2>
+                <div class="law-content">
+                    <p>Cette loi vise à protéger les données personnelles des utilisateurs en régulant la collecte, l'utilisation et la divulgation de ces informations.</p>
+                </div>
+            </div>
+
+            <div class="law-card">
+                <h2>2. Loi sur le commerce électronique 🛒</h2>
+                <div class="law-content">
+                    <p>Réglemente les transactions commerciales effectuées en ligne, incluant la protection des consommateurs et la transparence des informations.</p>
+                </div>
+            </div>
+
+            <div class="law-card">
+                <h2>3. Loi sur la propriété intellectuelle 📚</h2>
+                <div class="law-content">
+                    <p>Protège les droits des créateurs et des titulaires de droits sur leurs œuvres, inventions et marques.</p>
+                </div>
+            </div>
+
+            <!-- Ajoutez les autres lois ici -->
+
+            <div class="law-card">
+                <h2>4. Loi sur la cybercriminalité 💻</h2>
+                <div class="law-content">
+                    <p>Sanctionne les activités illégales sur Internet, telles que le piratage, le vol de données et les attaques de logiciels malveillants.</p>
+                </div>
+            </div>
+
+            <div class="law-card">
+                <h2>5. Loi sur la protection des consommateurs 🛡️</h2>
+                <div class="law-content">
+                    <p>Assure que les droits des consommateurs sont protégés dans les transactions commerciales et les services fournis.</p>
+                </div>
+            </div>
+
+            <div class="law-card">
+                <h2>6. Loi sur les communications électroniques 📡</h2>
+                <div class="law-content">
+                    <p>Réglemente l'utilisation des technologies de communication pour assurer la sécurité et la confidentialité des informations transmises.</p>
+                </div>
+            </div>
+
+            <div class="law-card">
+                <h2>7. Loi sur la publicité en ligne 📣</h2>
+                <div class="law-content">
+                    <p>Régule les pratiques publicitaires sur Internet pour garantir qu'elles sont équitables, transparentes et non trompeuses.</p>
+                </div>
+            </div>
+
+            <div class="law-card">
+                <h2>8. Loi sur la concurrence loyale ⚖️</h2>
+                <div class="law-content">
+                    <p>Protège les entreprises et les consommateurs contre les pratiques commerciales déloyales.</p>
+                </div>
+            </div>
+
+            <div class="law-card">
+                <h2>9. Loi sur les contrats électroniques 📝</h2>
+                <div class="law-content">
+                    <p>Établit les règles et les conditions pour la formation et l'exécution des contrats électroniques.</p>
+                </div>
+            </div>
+
+            <div class="law-card">
+                <h2>10. Loi sur la confidentialité des communications 📞</h2>
+                <div class="law-content">
+                    <p>Garantit la confidentialité des communications privées et des correspondances.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

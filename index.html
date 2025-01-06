@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions d'Utilisation - NextGen Bot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0e0e0e;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background: linear-gradient(90deg, #1a1a1a, #333333);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: #ff00ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?futuristic') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff00ff;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .condition-card {
+            background: rgba(255, 0, 255, 0.1);
+            border: 1px solid #ff00ff;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .condition-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff00ff;
+        }
+        .condition-content {
+            display: none;
+            text-align: left;
+        }
+        .condition-card.active .condition-content {
+            display: block;
+        }
+        a {
+            color: #ff00ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll('.condition-card');
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    card.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Conditions d'Utilisation - NextGen Bot 🚀</h1>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">À propos</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h2>Bienvenue sur notre bot futuriste</h2>
+    </div>
+    <div class="section">
+        <h1>Conditions d'Utilisation - NextGen Bot 🚀</h1>
+        <div class="conditions-grid">
+            <!-- Exemple de condition -->
+            <div class="condition-card">
+                <h2>1. Acceptation des Conditions ✅</h2>
+                <div class="condition-content">
+                    <p>En accédant à ce bot, vous acceptez d'être lié par les présentes conditions d'utilisation, toutes les <a href="Loi.html">les lois en vigueur</a>, et acceptez d'être responsable du respect des lois locales applicables.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>2. Utilisation du Bot 🔧</h2>
+                <div class="condition-content">
+                    <p>Vous ne devez pas utiliser ce bot d'une manière qui pourrait l'endommager, l'altérer ou interférer avec son fonctionnement.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>3. Propriété Intellectuelle 🧠</h2>
+                <div class="condition-content">
+                    <p>Le contenu de ce bot est protégé par les lois sur le droit d'auteur et autres lois sur la propriété intellectuelle.</p>
+                </div>
+            </div>
+
+            <!-- Ajoutez les 37 autres conditions ici -->
+            <div class="condition-card">
+                <h2>4. Modifications des Conditions 🔄</h2>
+                <div class="condition-content">
+                    <p>Nous pouvons réviser ces conditions d'utilisation à tout moment sans préavis.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>5. Responsabilité ⚖️</h2>
+                <div class="condition-content">
+                    <p>Nous ne serons pas responsables des dommages directs, indirects, spéciaux, accessoires ou punitifs résultant de votre utilisation de ce bot.</p>
+                </div>
+            </div>
+
+            <!-- Ajoutez les conditions restantes jusqu'à 40 -->
+
+            <div class="condition-card">
+                <h2>6. Confidentialité 🔐</h2>
+                <div class="condition-content">
+                    <p>Votre confidentialité est importante pour nous. Veuillez consulter notre politique de confidentialité pour plus de détails.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>7. Conduite de l'Utilisateur 🚦</h2>
+                <div class="condition-content">
+                    <p>Les utilisateurs doivent respecter les règles de conduite et éviter tout comportement inapproprié lors de l'utilisation du bot.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>8. Comptes d'Utilisateur 👥</h2>
+                <div class="condition-content">
+                    <p>Les utilisateurs sont responsables de la sécurité de leurs comptes et doivent protéger leurs informations de connexion.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>9. Contenu Généré par l'Utilisateur 📝</h2>
+                <div class="condition-content">
+                    <p>Les utilisateurs sont responsables du contenu qu'ils génèrent et partagent via le bot.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>10. Notifications 📧</h2>
+                <div class="condition-content">
+                    <p>Nous pouvons vous envoyer des notifications importantes concernant l'utilisation du bot.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>11. Support Technique 🛠️</h2>
+                <div class="condition-content">
+                    <p>Pour toute assistance technique, veuillez nous contacter à l'adresse suivante : <a href="mailto:altox1597@gmail.com">altox1597@gmail.com</a>.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>12. Résiliation ⛔</h2>
+                <div class="condition-content">
+                    <p>Nous nous réservons le droit de résilier ou de suspendre votre accès au bot à tout moment, sans préavis.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>13. Indemnisation 💼</h2>
+                <div class="condition-content">
+                    <p>Vous acceptez d'indemniser et de dégager de toute responsabilité notre société contre toute réclamation ou demande résultant de votre utilisation du bot.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>14. Liens Externes 🔗</h2>
+                <div class="condition-content">
+                    <p>Le bot peut contenir des liens vers des sites externes. Nous ne sommes pas responsables du contenu ou des pratiques de ces sites.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>15. Modifications du Bot 🛠️</h2>
+                <div class="condition-content">
+                    <p>Nous pouvons mettre à jour ou modifier le bot à tout moment pour améliorer ses fonctionnalités.</p>
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <h2>16. Droit Applicable 🏛️</h2>
+                <div class="condition-content">
+                    <p>Ces conditions d'utilisation sont régies par les <a href="Loi.html">les lois en vigueur
